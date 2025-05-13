@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 25.0,
-                          color: const Color.fromARGB(255, 86, 241, 167),
+                          color: Color.fromARGB(255, 86, 241, 167),
                         ),
                       ),
                       const Text("Feed",
@@ -71,7 +71,7 @@ class _HomeState extends State<Home> {
                     const SizedBox(
                       height: 5.0,
                     ),
-                    Container(
+                    SizedBox(
                       height: MediaQuery.of(context).size.height / 2.55,
                       child: ListView.builder(
                         shrinkWrap: true,
@@ -95,11 +95,16 @@ class _HomeState extends State<Home> {
                                 elevation: 2.0,
                                 borderRadius: BorderRadius.circular(20.0),
                                 child: Container(
+                                    padding: EdgeInsets.only(
+                                      left: 10.0,
+                                    ),
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(20.0),
                                     ),
                                     child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.end,
                                       children: [
                                         Padding(
                                           padding: EdgeInsets.all(10.0),
@@ -130,7 +135,7 @@ class _HomeState extends State<Home> {
                                                 },
                                               )),
                                         ),
-                                        Container(
+                                        SizedBox(
                                           width: MediaQuery.of(context)
                                                   .size
                                                   .width /
@@ -138,7 +143,6 @@ class _HomeState extends State<Home> {
                                           child: Text(
                                             maxLines: 2,
                                             articles[index].title!,
-                                            // textAlign: TextAlign.center,
                                             style: TextStyle(
                                               color: Colors.black,
                                               fontWeight: FontWeight.w500,
@@ -149,9 +153,7 @@ class _HomeState extends State<Home> {
                                         SizedBox(
                                           height: 5.0,
                                         ),
-                                        Container(
-                                          padding: EdgeInsets.only(
-                                              left: 5.0, right: 5.0),
+                                        SizedBox(
                                           width: MediaQuery.of(context)
                                                   .size
                                                   .width /
@@ -159,7 +161,6 @@ class _HomeState extends State<Home> {
                                           child: Text(
                                             maxLines: 3,
                                             articles[index].description!,
-                                            // textAlign: TextAlign.center,
                                             style: TextStyle(
                                               color:
                                                   Color.fromARGB(188, 0, 0, 0),
@@ -180,7 +181,7 @@ class _HomeState extends State<Home> {
                                                 bottomRight:
                                                     Radius.circular(10)),
                                           ),
-                                          margin: EdgeInsets.only(right: 10.0),
+                                          // margin: EdgeInsets.only(right: 10.0),
                                           child: Icon(
                                             Icons.arrow_forward,
                                             color: Colors.white,
@@ -228,7 +229,6 @@ class _HomeState extends State<Home> {
                       height: 5.0,
                     ),
                     Container(
-                      margin: EdgeInsets.only(bottom: 40.0),
                       width: MediaQuery.of(context).size.width,
                       height: MediaQuery.of(context).size.height,
                       child: ListView.builder(
@@ -246,7 +246,8 @@ class _HomeState extends State<Home> {
                                             )));
                               },
                               child: Container(
-                                margin: EdgeInsets.only(bottom: 20, right: 5.0),
+                                margin: EdgeInsets.only(bottom: 5, right: 5.0),
+                                padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.only(
@@ -281,7 +282,7 @@ class _HomeState extends State<Home> {
                                     ),
                                     Column(
                                       children: [
-                                        Container(
+                                        SizedBox(
                                           width: MediaQuery.of(context)
                                                   .size
                                                   .width /

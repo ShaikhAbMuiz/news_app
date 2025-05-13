@@ -40,17 +40,6 @@ Let me know if you'd like to add a GitHub link or if you're preparing this for a
 
 
 
-
-
-
-
-You said:
-give me the cross questing with answer 
-
-
-ChatGPT said:
-Sure Muiz! Here are some cross questions (follow-up interview questions) based on your News App project, along with confident and clear answers. These are commonly asked by interviewers to dig deeper into your understanding:
-
 1. Q: Why did you choose NewsAPI.org for this project?
 A:
 I chose NewsAPI.org because it offers a free and easy-to-use REST API with real-time news from multiple sources. It has categorized endpoints like top headlines, everything, and sources, which made it easier for me to filter and display news by category. Also, it’s beginner-friendly and well-documented, which helped speed up development.
@@ -78,3 +67,8 @@ I used ListView.builder with scrollDirection: Axis.horizontal to create the hori
 7. Q: If you were to improve this app further, what would you add?
 A:
 I’d definitely add features like bookmarking articles, search functionality, and dark mode. I’d also implement offline caching so users can access previously loaded articles without internet. And for better scalability, I’d use Provider or Riverpod for state management and store user preferences locally using SharedPreferences.
+
+
+
+
+
